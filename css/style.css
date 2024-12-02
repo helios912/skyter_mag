@@ -50,7 +50,7 @@ a {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0;
+    margin: 0 avto;
 }
 body {
     color: #2f3035;
@@ -382,4 +382,55 @@ li.slick-active button {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+.categories__inner{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.categories__item{
+    width: 370px;
+    height: 129px;
+    border-radius: 3px;
+    border: 1px solid #CDCDCD;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.categories__item:hover{
+    box-shadow: 3px 3px 20px 0px rgba(50, 50, 50, 0.25);
+}
+.categories__item-title{
+    color: #2F3035;
+    font-family: Barlow;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 52px;
+}
+.categories__item-text{
+    color: #C4C4C4;
+font-family: "SF Pro Display";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-right: 6px;
+position: relative;
+max-width: 72px;
+}
+.categories__item-text::after{
+    content: "";
+    background-image: url("../images/arrow-more.svg");
+    position: absolute;
+    width: 6px;
+    height: 9px;
+    bottom: 4px;
+    right: 0;
+
+}
+.categories__item:hover .categories__item-title{
+    color: #1c62cd;
 }
