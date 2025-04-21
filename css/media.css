@@ -1,0 +1,88 @@
+@media (max-width: 1200px) {
+    .baner-section__slider-img {
+        min-height: 380px;
+        max-width: 600px;
+    }
+    .baner-section__inner {
+        justify-content: space-around;
+    }
+    .baner-section__slider {
+        max-width: 600px;
+    }
+}
+@media (max-width: 1100px) {
+    .menu__item + .menu__item {
+        padding-left: 20px;
+    }
+    .header__adress {
+        margin-right: 20px;
+    }
+}
+@media (max-width: 968px) {
+    .header__bottom {
+        display: none;
+    }
+    .menu__list {
+        display: none;
+    }
+    .menu__btn {
+        display: block;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        padding: 0;
+    }
+    .menu__btn-line {
+        border-radius: 3px;
+        background: #2f3035;
+        width: 34px;
+        height: 3px;
+        margin: 8px 0;
+    }
+    .menu__mobile-linewrapper {
+        display: block;
+
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        font-size: 20px;
+        overflow-x: scroll;
+    }
+    .menu__mobile-line {
+        padding: 14px 0 14px 15px;
+        background: #f0f0f4;
+
+        width: 450px;
+    }
+
+    .baner-section__inner {
+        margin-top: 25px;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .baner-section__slider-img {
+        min-height: clamp(164px, calc((380 / 968) * 100vw), 380px);
+        max-width: 100%;
+    }
+
+    .baner-section__slider {
+        max-width: 80%;
+    }
+}
+@media (max-width: 840px) {
+}
+@media (max-width: 640px) {
+    .header__adress {
+        display: none;
+    }
+    .baner-section__slider {
+        max-width: 100%;
+    }
+    .baner-section__slider-btn {
+        display: none;
+    }
+    .slick-dots {
+        bottom: 20px;
+    }
+}

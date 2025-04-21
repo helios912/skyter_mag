@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="/css/ion.rangeSlider.min.css" />
         <link rel="stylesheet" href="/css/jquery.formstyler.css" />
         <link rel="stylesheet" href="/css/jquery.formstyler.theme.css" />
-        <link rel="stylesheet" href="/css/rateyo.min.css" />
+
         <link rel="stylesheet" href="/css/style.css" />
         <link rel="stylesheet" href="/css/media.css" />
         <link
@@ -102,6 +102,11 @@
                 <div class="container">
                     <div class="header__top-inner">
                         <nav class="menu">
+                            <button class="menu__btn">
+                                <div class="menu__btn-line"></div>
+                                <div class="menu__btn-line"></div>
+                                <div class="menu__btn-line"></div>
+                            </button>
                             <ul class="menu__list">
                                 <li class="menu__item">
                                     <a href="#" class="menu__link">Магазины</a>
@@ -170,6 +175,140 @@
                     </div>
                 </div>
             </div>
+            <ul class="menu-mobile-list">
+                <li class="menu-mobile__item">
+                    <a href="" class="menu-mobile__link">
+                        <img
+                            src="images/mobil-1.svg"
+                            alt=""
+                            class="menu-mobile__img"
+                        />
+                        <p class="menu-mobile__text">Войти</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="" class="menu-mobile__link">
+                        <img
+                            src="images/mobil-1.svg"
+                            alt=""
+                            class="menu-mobile__img"
+                        />
+                        <p class="menu-mobile__text">Регистрация</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="" class="menu-mobile__link">
+                        <img
+                            src="images/mobil-3.svg"
+                            alt=""
+                            class="menu-mobile__img"
+                        />
+                        <p class="menu-mobile__text">Избранное</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="" class="menu-mobile__link">
+                        <img
+                            src="images/mobil-4.svg"
+                            alt=""
+                            class="menu-mobile__img"
+                        />
+                        <p class="menu-mobile__text">Корзина</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="" class="menu-mobile__link">
+                        <img
+                            src="images/mobil-5.svg"
+                            alt=""
+                            class="menu-mobile__img"
+                        />
+                        <p class="menu-mobile__text">Магазины</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="" class="menu-mobile__link">
+                        <img
+                            src="images/mobil-6.svg"
+                            alt=""
+                            class="menu-mobile__img"
+                        />
+                        <p class="menu-mobile__text">Акции</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="" class="menu-mobile__link">
+                        <img
+                            src="images/mobil-7.svg"
+                            alt=""
+                            class="menu-mobile__img"
+                        />
+                        <p class="menu-mobile__text">Доставка и оплата</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="" class="menu-mobile__link">
+                        <p class="menu-mobile__text">Квадроциклы</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="" class="menu-mobile__link">
+                        <p class="menu-mobile__text">Катера</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="" class="menu-mobile__link">
+                        <p class="menu-mobile__text">Гидроциклы</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="" class="menu-mobile__link">
+                        <p class="menu-mobile__text">Лодки</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="" class="menu-mobile__link">
+                        <p class="menu-mobile__text">Вездеходы</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="" class="menu-mobile__link">
+                        <p class="menu-mobile__text">Снегоходы</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="" class="menu-mobile__link">
+                        <p class="menu-mobile__text">Двигатели</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="" class="menu-mobile__link">
+                        <p class="menu-mobile__text">Запчасти</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="" class="menu-mobile__link">
+                        <p class="menu-mobile__text">
+                            Москва, <br />
+                            ул. Науки 25
+                        </p>
+                    </a>
+                </li>
+            </ul>
+            <div class="menu__mobile-linewrapper">
+                <ul class="menu__mobile-line">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Магазины</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Акции</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Доставка и оплата</a>
+                    </li>
+                </ul>
+            </div>
+
             <div class="header__bottom">
                 <div class="container">
                     <div class="header__bottom-inner">
@@ -224,22 +363,46 @@
                 <div class="baner-section__inner">
                     <div class="baner-section__slider">
                         <a class="baner-section__slider-item" href="#">
-                            <img src="images/banner-slider.jpg" alt="" />
+                            <img
+                                class="baner-section__slider-img"
+                                src="images/banner-slider.jpg"
+                                alt=""
+                            />
                         </a>
                         <a class="baner-section__slider-item" href="#">
-                            <img src="images/banner-slider.jpg" alt="" />
+                            <img
+                                class="baner-section__slider-img"
+                                src="images/banner-slider.jpg"
+                                alt=""
+                            />
                         </a>
                         <a class="baner-section__slider-item" href="#">
-                            <img src="images/banner-slider.jpg" alt="" />
+                            <img
+                                class="baner-section__slider-img"
+                                src="images/banner-slider.jpg"
+                                alt=""
+                            />
                         </a>
                         <a class="baner-section__slider-item" href="#">
-                            <img src="images/banner-slider.jpg" alt="" />
+                            <img
+                                class="baner-section__slider-img"
+                                src="images/banner-slider.jpg"
+                                alt=""
+                            />
                         </a>
                         <a class="baner-section__slider-item" href="#">
-                            <img src="images/banner-slider.jpg" alt="" />
+                            <img
+                                class="baner-section__slider-img"
+                                src="images/banner-slider.jpg"
+                                alt=""
+                            />
                         </a>
                         <a class="baner-section__slider-item" href="#">
-                            <img src="images/banner-slider.jpg" alt="" />
+                            <img
+                                class="baner-section__slider-img"
+                                src="images/banner-slider.jpg"
+                                alt=""
+                            />
                         </a>
                     </div>
                     <a class="baner-section__item sale-item">
@@ -270,7 +433,7 @@
                 </div>
             </div>
         </section>
-        <section class="search page-section">
+        <!-- <section class="search page-section">
             <div class="container">
                 <div class="search__inner">
                     <div class="search__tabs">
@@ -3217,23 +3380,13 @@
                 </div>
             </div>
         </footer>
+        -->
 
         <script src="js/jquery.min.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/ion.rangeSlider.min.js"></script>
         <script src="js/jquery.formstyler.min.js"></script>
-        <script src="js/rateyo.min.jsjquery.formstyler.min.js"></script>
+
         <script src="js/main.js"></script>
     </body>
 </html>
-
-<!-- <div class="tabs__wrapper">
-  <div class="tabs">
-    <a class="tab tab--active" href="#"></a>
-  </div>
-  <div class="tabs-container">
-    <div class="tabs-content">
-
-    </div>
-  </div>
-</div> -->

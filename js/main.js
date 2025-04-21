@@ -58,4 +58,7 @@ $(function () {
         from: 200000,
         to: 300000,
     });
+    $('.menu__btn').on('click', function () {
+        $('.menu-mobile-list').toggleClass('menu-mobile-list--active');
+    });
 });
