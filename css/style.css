@@ -1532,3 +1532,15 @@ li.slick-active button {
 .card__tabs {
     margin-bottom: 200px;
 }
+.product-slider .slick-dots {
+    bottom: -30px;
+}
+.product-slider .slick-dots button {
+    background-color: #c4c4c4;
+}
+.product-slider .slick-dots .slick-active button {
+    background-color: #1c62cd;
+}
+.aside__btn {
+    display: none;
+}

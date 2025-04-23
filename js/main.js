@@ -5,6 +5,15 @@ $(function () {
             '<button class="baner-section__slider-btn baner-section__slider-btnprev"><img src="/images/arrow-right.svg"></button>',
         nextArrow:
             '<button class="baner-section__slider-btn baner-section__slider-btnnext"><img src="/images/arrow-left.svg"></button>',
+        responsive: [
+            {
+                breakpoint: 1301,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                },
+            },
+        ],
     });
     $('.tab').on('click', function (e) {
         e.preventDefault();
@@ -28,6 +37,39 @@ $(function () {
             '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="/images/arrow-black-left.svg"></button>',
         slidesToShow: 4,
         slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1301,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                },
+            },
+            {
+                breakpoint: 1201,
+                settings: {
+                    slidesToShow: 3,
+                    arrows: false,
+                    dots: true,
+                },
+            },
+            {
+                breakpoint: 870,
+                settings: {
+                    slidesToShow: 2,
+                    arrows: false,
+                    dots: true,
+                },
+            },
+            {
+                breakpoint: 590,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                    dots: true,
+                },
+            },
+        ],
     });
 
     $('.filter-style').styler();
@@ -60,5 +102,12 @@ $(function () {
     });
     $('.menu__btn').on('click', function () {
         $('.menu-mobile-list').toggleClass('menu-mobile-list--active');
+    });
+    $('.footer__top-title').on('click', function () {
+        $(this).next().slideToggle();
+        $(this).toggleClass('footer__bottop--active');
+    });
+    $('.aside__btn').on('click', function () {
+        $(this).next().slideToggle();
     });
 });

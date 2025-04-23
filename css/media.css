@@ -1,3 +1,8 @@
+@media (max-width: 1300px) {
+    .product__more {
+        margin-top: 60px;
+    }
+}
 @media (max-width: 1200px) {
     .baner-section__slider-img {
         min-height: 380px;
@@ -8,6 +13,14 @@
     }
     .baner-section__slider {
         max-width: 600px;
+    }
+    .categories__inner {
+        justify-content: space-around;
+        gap: 10px;
+    }
+    .catalog__inner-list {
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
 @media (max-width: 1100px) {
@@ -69,9 +82,46 @@
     .baner-section__slider {
         max-width: 80%;
     }
+    .slick-arrow img {
+        display: none !important;
+    }
+    .mobile-overflow {
+        width: 1000px;
+    }
+    .tabs-wrapper,
+    .breadcrumbs__inner,
+    .catalog__filter-itemsinner {
+        overflow-x: scroll;
+    }
+    .tabs-wrapper.tabs-wrapper--no-scroll {
+        overflow: hidden;
+    }
 }
-@media (max-width: 840px) {
+@media (max-width: 940px) {
+    .footer__top-inner {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .footer__top-item {
+        margin-bottom: 25px;
+    }
+    .social-list {
+        padding-top: 20px;
+    }
+    .catalog__filter-btn button {
+        display: none;
+    }
+    .catalog__filter-items {
+        margin-bottom: 25px;
+    }
+    .catalog__filter-btn {
+        margin-bottom: 25px;
+    }
+    .catalog__filter {
+        display: block;
+    }
 }
+
 @media (max-width: 640px) {
     .header__adress {
         display: none;
@@ -84,5 +134,125 @@
     }
     .slick-dots {
         bottom: 20px;
+    }
+    .baner-section .container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .search__content-btn {
+        font-size: 0px;
+        line-height: 0;
+        padding: 17px;
+        background-image: url(../images/search-icon.svg);
+        width: 24px;
+        height: 24px;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 8px;
+        top: 13px;
+    }
+    .search__content-input {
+        height: 50px;
+        padding-right: 50px;
+    }
+    .search__content-form {
+        position: relative;
+    }
+    .banner-link img {
+        min-height: 90px;
+        object-fit: cover;
+    }
+    .catalog__inner {
+        flex-wrap: wrap;
+    }
+    .tabs__wrapper.tabs-wrapper--no-scroll {
+        overflow: hidden;
+    }
+    .aside__btn {
+        display: block;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+        padding: 15px 0;
+        width: 100%;
+        color: #fff;
+        background-color: #1c62cd;
+        margin-bottom: 30px;
+    }
+    .aside-filter {
+        display: none;
+    }
+}
+@media (max-width: 540px) {
+    .footer__top-item {
+        width: 100%;
+    }
+    .footer__bottom {
+        flex-direction: column;
+        align-items: start;
+    }
+    .footer__bottom-link {
+        margin: 12px 0;
+    }
+    .footer__top-newslatter.footer__top-item {
+        margin-right: 0px;
+    }
+    .social-list__item {
+        justify-content: center;
+    }
+    .footer__top-newslatter {
+        width: 290px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .footer-list {
+        display: none;
+    }
+    .footer__top-title.footer__bottop {
+        color: #7f7f7f;
+        font-family: 'SF Pro Display';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px; /* 128.571% */
+        letter-spacing: -0.086px;
+        padding: 15px 0;
+        border-bottom: 1px solid #fff;
+        border-top: 1px solid #fff;
+    }
+    .footer__bottop {
+        position: relative;
+        transition: all 0.5s ease;
+    }
+    .footer__bottop::after {
+        content: '';
+        position: absolute;
+        background-image: url(../images/arrow-down.svg);
+
+        top: 21px;
+        right: 20px;
+        height: 10px;
+        width: 14px;
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .footer__bottop--active::after {
+        transform: rotate(180deg);
+    }
+    .footer__top-item {
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 440px) {
+    .categories__item {
+        padding: 20px 10px 16px;
+    }
+    .pagination-list__item {
+        margin: 0;
     }
 }
