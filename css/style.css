@@ -1544,3 +1544,6 @@ li.slick-active button {
 .aside__btn {
     display: none;
 }
+.product-card__btn-down {
+    display: none;
+}
